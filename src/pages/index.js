@@ -1,12 +1,15 @@
-import React from "react"
+import React from 'react'
+
+import Layout from '../components/layout'
 
 const Home = () => {
-  return (
-    <div>
-      <h1>Sungeun Sul, RD CDN</h1>
-      <p>Luxuriating wellness through proper eating.</p>
-    </div>
+    return (
+        <Layout>
+            <h1>I am a dietitian</h1>
+        </Layout>
     )
 }
 
-export default Home;
+
+export default Home
+
