@@ -6,36 +6,49 @@ import { Link, graphql, useStaticQuery } from 'gatsby'
 import blogStyles from './blog.module.scss'
 
 const Blog = () => {
+    // const data = useStaticQuery(graphql`
+    //     query {
+    //         allMarkdownRemark {
+    //             edges {
+    //                 node {
+    //                     frontmatter {
+    //                         title
+    //                         date
+    //                     }
+    //                     fields {
+    //                         slug
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // `)
 
     const data = useStaticQuery(graphql`
-        query {
-            allMarkdownRemark {
-                edges {
-                    node {
-                        frontmatter {
-                            title
-                            date
-                        }
-                        fields {
-                            slug
-                        }
-                    }
-                }
+    query {
+        allContentfulBlogPost(sort: {fields: publishedDate, order: DESC}) {
+          edges {
+            node {
+              title
+              slug
+              publishedDate(formatString:"MMMM Do, YYYY")
             }
+          }
         }
+      }     
     `)
 
     return (
         <Layout>
             <h1>Blog Posts</h1>
             <ol className={blogStyles.posts}>
-                {data.allMarkdownRemark.edges.map((post) => {
+                {data.allContentfulBlogPost.edges.map((post) => {
                 return (
                     <li className={blogStyles.post}>
-                        <Link to={`/blog/${post.node.fields.slug}`}>
-                            <h3>{post.node.frontmatter.title}</h3>
+                        <Link to={`/blog/${post.node.slug}`}>
+                            <h3>{post.node.title}</h3>
                         </Link>
-                        <p>{post.node.frontmatter.date}</p>
+                        <p>{post.node.publishedDate}</p>
                     </li>
                 )
                 })}
