@@ -13,6 +13,7 @@ module.exports = {
     author: 'Sharon Kim'
   },
   plugins: [
+    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-contentful',
       options: {
