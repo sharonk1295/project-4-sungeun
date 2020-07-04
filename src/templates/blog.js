@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import {documentToReactComponents } from '@contentful/rich-text-react-renderer'
+import { Link } from "gatsby"
 
 import Layout from '../components/layout'
 import Head from '../components/head'
@@ -47,6 +48,7 @@ const BlogPost = (props) => {
             <h1>{props.data.contentfulBlogPost.title}</h1>
             <p>{props.data.contentfulBlogPost.publishedDate}</p>
             {documentToReactComponents(props.data.contentfulBlogPost.body.json, options)}
+            <Link to="/blog">&larr; Go Back</Link>
         </Layout>
     )
 }
