@@ -1,18 +1,18 @@
 import React from 'react'
 import Header from './header'
 import Footer from './footer'
-import '../styles/index.scss'
-import layoutStyles from './layout.module.scss'
+
+import './layout.css'
 
 const Layout = (props) => {
     return (
-        <div className={layoutStyles.container}>
+        <>
             <Header />
-            <main className={layoutStyles.content}>
+            <main style={{ flex: `1 0 auto` }}>
                 {props.children}
             </main>
             <Footer />
-        </div>
+        </>
     )
 }
 
