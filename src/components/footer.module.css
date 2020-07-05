@@ -1,8 +1,9 @@
 .footer {
     /* margin-top: 35rem; */
     text-align: center;
-    background-color: thistle;
+    /* background-color: thistle; */
     /* margin-bottom: 0; */
-    flex: 1 0 auto;
+    /* flex: 1 0 auto; */
+    margin-top: 31rem;
     padding-top: 45px;
 }

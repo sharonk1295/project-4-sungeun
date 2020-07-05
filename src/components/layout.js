@@ -13,7 +13,7 @@ const Layout = (props) => {
                 margin: `0 auto`,
                 // maxWidth: 960,
                 // padding: `0 1.0875rem 1.45rem`,
-                padding: `0 1rem 0rem`,
+                // padding: `0 1rem 0rem`,
                 }}
             >
                 <main>{props.children}</main>

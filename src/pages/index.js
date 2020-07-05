@@ -21,21 +21,22 @@ const Home = () => {
     `)
 
     return (
-        <Layout>
-            <Head title="Home" />
-            <BackgroundImage fluid={data.backImg.childImageSharp.fluid} className={homeStyles.background}>
+        <BackgroundImage fluid={data.backImg.childImageSharp.fluid} className={homeStyles.background}>
+            <Layout>
+                <Head title="Home" />
                 <h1>I am a dietitian</h1>
-            </BackgroundImage>
-        </Layout>
+            </Layout>
+        </BackgroundImage> 
     )
 }
 
 
 export default Home
 
-// {/* <BackgroundImage fluid={data.backImg.childImageSharp.fluid} className={homeStyles.background}>
-//             <Layout>
-//                 <Head title="Home" />
-//                 <h1>I am a dietitian</h1>
-//             </Layout>
-//         </BackgroundImage> */}
+
+// {/* <Layout>
+// <Head title="Home" />
+// <BackgroundImage fluid={data.backImg.childImageSharp.fluid} className={homeStyles.background}>
+//     <h1>I am a dietitian</h1>
+// </BackgroundImage>
+// </Layout> */}
