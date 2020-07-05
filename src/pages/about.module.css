@@ -1,7 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+.heading {
+    font-family: 'Poiret One', cursive;
+}
 .bio {
     display: flex;
     justify-content: space-between;
+    margin-bottom: -15rem;
+}
+.text {
+    width: 85%;
+    padding: 1rem 2rem 1rem 1rem;
 }
 .img {
     width: 100%;
+}
+
+@media only screen and (max-width: 460px) {
+    p {
+        font-size: 10px;
+    }
 }

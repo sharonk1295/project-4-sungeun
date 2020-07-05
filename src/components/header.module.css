@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0rem 3rem;
+    padding: 1rem 0rem 4rem;
     /* background-color: rgba(143, 247, 118, 0.151); */
     background: linear-gradient(0deg, rgba(248,249,251,0) 10%, rgba(101,177,81,0.2) 100%);
     width: 100%;
@@ -29,4 +29,25 @@
 
 .nav-bar ul{
     list-style-type: none;
+}
+.link {
+    text-decoration: none;
+    font-weight: 600;
+}
+.link:hover {
+    color: white;
+    text-shadow: gray 1px 2px;
+}
+.active-link {
+    color: rgb(172, 170, 65);
+    text-shadow: rgb(238, 238, 39) 1px 1px;
+}
+
+@media only screen and (max-width: 460px) {
+    .title h1 a {
+        font-size: 32px;
+    }
+    .title p {
+        font-size: 20px;
+    }
 }

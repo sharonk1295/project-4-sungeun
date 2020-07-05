@@ -6,6 +6,7 @@ import Head from '../components/head'
 //import '../styles/index.scss'
 import BackgroundImage from 'gatsby-background-image'
 import homeStyles from './index.module.css'
+import { Link } from 'gatsby'
 
 const Home = () => {
     const data = useStaticQuery(graphql`
@@ -24,7 +25,11 @@ const Home = () => {
         <BackgroundImage fluid={data.backImg.childImageSharp.fluid} className={homeStyles.background}>
             <Layout>
                 <Head title="Home" />
-                <h1>I am a dietitian</h1>
+                <div className={homeStyles.text}>
+                    <h1>Welcome! Dive deeper into <br/>nutrition and learn more<br/>about joyful eating.</h1>
+                    <button><Link to="/blog">Read More</Link></button>
+                </div>
+                
             </Layout>
         </BackgroundImage> 
     )

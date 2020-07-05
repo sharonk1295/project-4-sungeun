@@ -8,3 +8,31 @@
     height: 100vh;
     margin-bottom: 0;
 }
+.text {
+    margin-left: 1rem;
+}
+.text h1, a{
+    font-family: 'Poiret One', cursive;
+}
+.text button {
+    padding: 4px 6px;
+    /* border: none; */
+    border-radius: 3px;
+    outline: none;
+    border: rgb(231, 227, 227);
+    border-style: outset;
+}
+.text a {
+    text-decoration: none;
+}
+.text button:hover {
+    background-color: orange;
+    transform: translate(2px, 2px);
+    /* outline: none;
+    border-style: outset;
+    border: orange; */
+}
+.text button:hover a {
+    color: white;
+    font-weight: 600;
+}

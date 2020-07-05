@@ -1,8 +1,6 @@
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -629,8 +627,4 @@ pre tt:after {
   html {
     font-size: 100%;
   }
-  /* .name_title {
-    /* font-size: 50px;
-    color: orange
-  } */
 }
