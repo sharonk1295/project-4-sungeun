@@ -8,10 +8,26 @@ const Layout = (props) => {
     return (
         <>
             <Header />
-            <main style={{ flex: `1 0 auto` }}>
-                {props.children}
-            </main>
-            <Footer />
+            <div
+                style={{
+                margin: `0 auto`,
+                // maxWidth: 960,
+                // padding: `0 1.0875rem 1.45rem`,
+                padding: `0 1rem 0rem`,
+                }}
+            >
+                <main>{props.children}</main>
+                <Footer style={{
+                    flex: `1 0 auto`,
+                    textAlign: `center`,
+                    paddingTop: `45px`,
+                    // position: `absolute`,
+                    // bottom: `0`, 
+                    // width: `100%`,
+                    // height: `2.5rem`
+                }}>
+            </Footer>
+            </div>
         </>
     )
 }

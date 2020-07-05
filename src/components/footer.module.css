@@ -2,5 +2,7 @@
     /* margin-top: 35rem; */
     text-align: center;
     background-color: thistle;
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
+    flex: 1 0 auto;
+    padding-top: 45px;
 }
