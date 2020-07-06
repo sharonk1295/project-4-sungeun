@@ -3,3 +3,7 @@
     margin-left: 1rem;
     font-size: 48px;
 }
+.contacts {
+    display: flex;
+    justify-content: space-evenly;
+}
