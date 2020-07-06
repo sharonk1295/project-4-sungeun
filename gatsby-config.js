@@ -31,6 +31,18 @@ module.exports = {
         path: `${__dirname}/src/images`
       }
     },
-    'gatsby-transformer-remark'
+    'gatsby-transformer-remark',
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `GatsbyJS`,
+        short_name: `GatsbyJS`,
+        start_url: `/`,
+        background_color: `#6b37bf`,
+        theme_color: `#6b37bf`,
+        display: `standalone`,
+        icon: `src/images/avocado.png`
+      }
+    }
   ],
 }
