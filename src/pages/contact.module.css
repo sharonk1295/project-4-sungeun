@@ -4,6 +4,13 @@
     font-size: 48px;
 }
 .contacts {
+    margin-top: 5rem;
     display: flex;
     justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 460px) {
+    .header {
+        font-size: 32px;
+    }
 }
