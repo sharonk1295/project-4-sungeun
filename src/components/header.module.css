@@ -8,7 +8,7 @@
     padding: 1rem 0rem 4rem;
     /* background-color: rgba(143, 247, 118, 0.151); */
     background: linear-gradient(0deg, rgba(248,249,251,0) 10%, rgba(101,177,81,0.2) 100%);
-    width: 100%;
+    /* width: 100%; */
 }
 .title {
     margin-left: 1rem;
@@ -25,14 +25,19 @@
     font-family: 'Bad Script', cursive;
     font-size: 24px;
     letter-spacing: 1px;
+    font-weight: 500;
 }
-
+.nav-bar {
+    margin-right: 3px;
+}
 .nav-bar ul{
     list-style-type: none;
+    /* display: flex; */
 }
 .link {
     text-decoration: none;
     font-weight: 600;
+    font-family: 'Merriweather', serif;
 }
 .link:hover {
     color: white;
@@ -45,9 +50,9 @@
 
 @media only screen and (max-width: 460px) {
     .title h1 a {
-        font-size: 32px;
+        font-size: 36px;
     }
     .title p {
-        font-size: 20px;
+        font-size: 19px;
     }
 }

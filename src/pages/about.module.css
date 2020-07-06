@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
-
 .heading {
-    font-family: 'Poiret One', cursive;
+    /* font-family: 'Poiret One', cursive; */
+    font-family: 'Almarai', sans-serif;
+    margin-left: 1rem;
+    font-size: 48px;
 }
 .bio {
     display: flex;
@@ -17,7 +18,10 @@
 }
 
 @media only screen and (max-width: 460px) {
+    .heading {
+        font-size: 32px;
+    }
     p {
-        font-size: 10px;
+        font-size: 12px;
     }
 }

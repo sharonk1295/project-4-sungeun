@@ -5,6 +5,7 @@ import { Link } from "gatsby"
 
 import Layout from '../components/layout'
 import Head from '../components/head'
+import blogPostStyles from './blog.module.css'
 
 // export const query = graphql`
 //     query($slug: String!) {
@@ -45,10 +46,10 @@ const BlogPost = (props) => {
     return (
         <Layout>
             <Head title={props.data.contentfulBlogPost.title}/>
-            <h1>{props.data.contentfulBlogPost.title}</h1>
-            <p>{props.data.contentfulBlogPost.publishedDate}</p>
+            <h1 className={blogPostStyles.title}>{props.data.contentfulBlogPost.title}</h1>
+            <p className={blogPostStyles.date}>- {props.data.contentfulBlogPost.publishedDate} -</p>
             {documentToReactComponents(props.data.contentfulBlogPost.body.json, options)}
-            <Link to="/blog">&larr; Go Back</Link>
+            <Link to="/blog" className={blogPostStyles.goBack}>&larr; Go Back</Link>
         </Layout>
     )
 }

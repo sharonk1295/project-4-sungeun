@@ -1,33 +1,42 @@
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300');
 
 .background {
-    height: 100vh;
+    height: 100%;
     margin-bottom: 0;
 }
 .text {
     margin-left: 1rem;
+    margin-top: 1rem;
 }
-.text h1, a{
-    font-family: 'Poiret One', cursive;
+.text h1{
+    /* font-family: 'Poiret One', cursive; */
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 1px;
+    font-size: 38px;
+    font-weight: 300;
 }
 .text button {
-    padding: 4px 6px;
+    padding: 4px 7px;
     /* border: none; */
     border-radius: 3px;
+    background-color: rgb(29, 163, 40);
     outline: none;
-    border: rgb(231, 227, 227);
+    border: rgb(99, 202, 108);
     border-style: outset;
 }
 .text a {
     text-decoration: none;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: whitesmoke;
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 .text button:hover {
     background-color: orange;
-    transform: translate(2px, 2px);
+    border: orange;
+    border-style: outset;
+    transform: translate(2px, 3px);
     /* outline: none;
     border-style: outset;
     border: orange; */
@@ -35,4 +44,19 @@
 .text button:hover a {
     color: white;
     font-weight: 600;
+}
+
+@media only screen and (max-width: 460px) {
+    .text {
+        margin-top: -1rem;
+    }
+    .text h1 {
+        font-size: 20px;
+    }
+    .text button {
+        padding: 2px 2px;
+    }
+    .text a {
+        font-size: 16px;
+    }
 }

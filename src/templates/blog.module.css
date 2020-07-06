@@ -1,0 +1,26 @@
+.title {
+    font-family: 'Almarai', sans-serif;
+    font-size: 48px;
+    text-align: center;
+}
+.date {
+    text-align: center;
+    margin-top: -1rem;
+    font-style: italic;
+    color: olivedrab;
+    font-weight: 500;
+}
+.go-back {
+    text-decoration: none;
+    color: green;
+    font-weight: 600;
+}
+.go-back:hover {
+    color: orange
+}
+
+@media only screen and (max-width: 460px) {
+    .title {
+        font-size: 34px;
+    }
+}

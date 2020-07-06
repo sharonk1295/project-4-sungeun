@@ -42,7 +42,7 @@ const Blog = () => {
     return (
         <Layout>
           <Head title="Blog" />
-            <h1>Blog Posts</h1>
+            <h1 className={blogStyles.header}>Blog Posts</h1>
             <ol className={blogStyles.posts}>
                 {data.allContentfulBlogPost.edges.map((post) => {
                 return (
