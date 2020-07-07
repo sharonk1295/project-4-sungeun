@@ -1,5 +1,6 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-💫 A Website/Blog built for a Registered Dietitian
+
+## 💫  A Website/Blog built for a Registered Dietitian
 
 1. Live Site:
 [Check out the website!](https://sungeunsul.netlify.app/)
